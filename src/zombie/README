@@ -1,0 +1,17 @@
+how to run:
+
+how to test:
+
+key design thoughts:
+
+Given n x n grid on which zombies and creatures live, 2 dimensions array is used to represent grid in the code.
+Initially I thought there is only one victim on each grid square, in contrast, the problem description said any number
+of zombies and creatures may occupy the same grid square, I realised that the data structure like list must be used on
+each cell of 2 dimensions array.
+
+Furthermore, others the zombies move in a certain order, the first newly created zombie move first, the second newly
+created zombie move second and so on. I need to track down the sequence of infection order for others the victims,
+ First In First Out approach is used here, I decided to use queue to implement it.
+
+At the end, the program need to produce the scores and others the final position of the zombies , others the frozen zombie are
+retained in the list.
